@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,600;0,700;1,400;1,700;1,800&family=Nunito:ital,wght@0,400;0,600;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,300;1,400;1,500;1,600&display=swap');
+/* font-family: 'Libre Franklin', sans-serif;
+font-family: 'Nunito', sans-serif; */
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%; /* 1rem */
+}
+
+.brand {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #130f40;
+}
+
+.navbar a{
+    font-size: 1.7rem;
+    color: #666;
+}
+
+.toolbar a {
+    font-size: 2.5rem;
+    color: #130f40;
+}
+/* selector */
+h3 {
+    color: #dc147b; /* 0 1 2 3 4 5 6 7 8 9 a b c d e f*/
+    /* rgb(200, 20, 60) */
+}
