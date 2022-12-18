@@ -40,6 +40,12 @@ h2 {
 h6 {
     font-size: calc(1.1rem + 0.38vw);
 }
+
+.header{
+    padding-bottom: 2rem;
+    font-size: 3.5rem;
+    text-align: center;
+}
 .page-header {
     display: flex;
     align-items: center;
@@ -47,6 +53,12 @@ h6 {
 
     padding: 2rem 9%;
     background: white;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 
@@ -65,6 +77,10 @@ h6 {
     color: var(--nav-link-color);
 }
 
+.page-header .navbar a:hover, .page-header .toolbar a:hover, .page-header .navbar a:focus, .page-header .toolbar a:focus {
+    color: var(--active-color);
+}
+
 .page-header .toolbar a {
     font-size: 2.5rem;
     color: var(--nav-link-color);
@@ -72,11 +88,14 @@ h6 {
 }
 
 .catalog{
-    width:80%;
+    /* width:90%; */
+    padding: 5rem 9%;
 }
 
-.product-container{
-
+.catalog .product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
 }
 
 .catalog .product-container .content {
@@ -128,6 +147,11 @@ h6 {
 .mb-3 {
     margin-bottom: 3rem;
 }
+
+.mt-5 {
+    margin-top: 3rem    ;
+}
+
 .flex-container{
     display: flex;
     align-items: center;
@@ -140,11 +164,59 @@ h6 {
 
 .footer-link{
     font-size: 0.9rem;
+    position: relative;
     color: whitesmoke;
+}
+
+.footer-link:hover, .footer-link:focus {
+    color: var(--active-color);
+    padding-left: 0.6rem;
+}
+
+.footer-link::before {
+    content: '\f0da';
+    display: inline-block;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #fff;
+    transition: all 0.3s;
+    opacity: 0;
+}
+
+.footer-link:hover::before, .footer-link:focus::before{
+    opacity: 1;
 }
 
 .border-top {
     border-top-style: solid;
     border-color: black;
     border-top-width: 1px;
+}
+
+.grid-container{
+    display: grid;
+    /* height: 100vh; */
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.2rem;
+    grid-template-areas: "sidebar main main main";
+}
+
+main {
+    background-color: #fff;
+    grid-area: main;
+}
+
+aside {
+    background-color: blueviolet;
+    grid-area: sidebar;
+}
+
+.svg-icon {
+    width: 64px;
+    height: 64px;
+    stroke-width: 2;
 }
