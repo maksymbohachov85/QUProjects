@@ -2,31 +2,149 @@
 /* font-family: 'Libre Franklin', sans-serif;
 font-family: 'Nunito', sans-serif; */
 
+:root {
+    --nav-link-color: #130f40;
+    --active-color: salmon;
+}
+
+
 * {
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
 html {
     font-size: 62.5%; /* 1rem */
 }
 
-.brand {
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: .5rem;
+    font-weight: 900;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: calc(1.345rem + 1.4vw);
+}
+
+
+h2 {
+    font-size: calc(1.315rem + 0.78vw);
+}
+
+h6 {
+    font-size: calc(1.1rem + 0.38vw);
+}
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 2rem 9%;
+    background: white;
+}
+
+
+.page-header .brand {
     font-size: 2.5rem;
     font-weight: bolder;
-    color: #130f40;
+    color: var(--nav-link-color);
+}
+.page-header .brand i {
+    color: var(--active-color);
 }
 
-.navbar a{
+.page-header .navbar a{
     font-size: 1.7rem;
-    color: #666;
+    margin: 0 1rem;
+    color: var(--nav-link-color);
 }
 
-.toolbar a {
+.page-header .toolbar a {
     font-size: 2.5rem;
-    color: #130f40;
+    color: var(--nav-link-color);
+    margin-left: 1.5rem;
 }
-/* selector */
-h3 {
-    color: #dc147b; /* 0 1 2 3 4 5 6 7 8 9 a b c d e f*/
-    /* rgb(200, 20, 60) */
+
+.catalog{
+    width:80%;
+}
+
+.product-container{
+
+}
+
+.catalog .product-container .content {
+    padding: 1rem 0;
+    text-align: center;
+}
+.catalog .product-container .content h3 {
+    font-size: 2.2rem;
+    padding-bottom: .5rem;
+}
+
+.catalog .product-container .content .price {
+    font-size: 2rem;
+}
+
+.catalog .product-container .image {
+    height: 45rem;
+    width: 100%;
+
+}
+.catalog .product-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* footer */
+
+.bg-dark {
+    background-color: #030114e1;
+} 
+.text-white {
+    color: white;
+}
+
+.container {
+    max-width: 90%;
+    margin: auto;
+}
+
+.py-4 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+.py-5{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.mb-3 {
+    margin-bottom: 3rem;
+}
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.list-unstyled{
+    list-style: none;
+}
+
+.footer-link{
+    font-size: 0.9rem;
+    color: whitesmoke;
+}
+
+.border-top {
+    border-top-style: solid;
+    border-color: black;
+    border-top-width: 1px;
 }
