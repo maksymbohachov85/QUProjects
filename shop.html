@@ -19,6 +19,8 @@
     <!-- Navigation -->
     <header class="page-header">
         <a href="#" class="brand"><i class="fas fa-shopping-cart"></i> Sincere Shopaholic</a>
+        <input type="checkbox" id="toggler">
+        <label for="toggler"><i class="fas fa-bars"></i></label>
         <nav class="navbar">
             <a href="index.html">Home</a> 
             <a href="shop.html">Shop</a> 
@@ -28,14 +30,28 @@
         </nav>
         <div class="toolbar">
             <a href="#"><i class="far fa-heart"></i></a>
-            <a href="#"><i class="fas fa-dolly-flatbed"></i></a>
+            <a href="cart.html"><i class="fas fa-dolly-flatbed"></i></a>
             <a href="#"><i class="far fa-user"></i></a>
         </div>
     </header>
     <!-- /Navigation -->
 
-
-    <div class="grid-container mt-5">
+    <div class="container mt-5 py-5">
+        <section class="py-5">
+            <div class="flex-container">
+                <h1 class="text-uppercase">Shop</h1>
+                <div>
+                    <nav class="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a class="" href="index.html">Home</a></li>
+                            <li class="breadcrumb-item active">Shop</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="container grid-container mt-5">
         <main>
             <section class="catalog">
                 <header class="header">
@@ -63,12 +79,12 @@
                             <a href="#" class="fas fa-eye"></a>
                         </div>
                         <div class="image">
-                            <img src="images/product-1.jpg">
+                            <img src="images/product-2.jpg">
                         </div>
                         <div class="content">
                             <h3>Product Name</h3>
                             <div class="price">$12</div>
-                        </div>
+                        </div>    
                     </div>
                     <div class="product">
                         <div class="icons">
@@ -77,12 +93,12 @@
                             <a href="#" class="fas fa-eye"></a>
                         </div>
                         <div class="image">
-                            <img src="images/product-1.jpg">
+                            <img src="images/product-3.jpg">
                         </div>
                         <div class="content">
                             <h3>Product Name</h3>
                             <div class="price">$12</div>
-                        </div>
+                        </div>    
                     </div>
                     <div class="product">
                         <div class="icons">
@@ -91,13 +107,69 @@
                             <a href="#" class="fas fa-eye"></a>
                         </div>
                         <div class="image">
-                            <img src="images/product-1.jpg">
+                            <img src="images/product-4.jpg">
                         </div>
                         <div class="content">
                             <h3>Product Name</h3>
                             <div class="price">$12</div>
-                        </div>
+                        </div>    
                     </div>
+                    <div class="product">
+                      <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                      </div>
+                      <div class="image">
+                          <img src="images/product-1.jpg">
+                      </div>
+                      <div class="content">
+                          <h3>Product Name</h3>
+                          <div class="price">$12</div>
+                      </div>
+                  </div>
+                  <div class="product">
+                      <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                      </div>
+                      <div class="image">
+                          <img src="images/product-2.jpg">
+                      </div>
+                      <div class="content">
+                          <h3>Product Name</h3>
+                          <div class="price">$12</div>
+                      </div>    
+                  </div>
+                  <div class="product">
+                      <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                      </div>
+                      <div class="image">
+                          <img src="images/product-3.jpg">
+                      </div>
+                      <div class="content">
+                          <h3>Product Name</h3>
+                          <div class="price">$12</div>
+                      </div>    
+                  </div>
+                  <div class="product">
+                      <div class="icons">
+                          <a href="#" class="fas fa-shopping-cart"></a>
+                          <a href="#" class="fas fa-heart"></a>
+                          <a href="#" class="fas fa-eye"></a>
+                      </div>
+                      <div class="image">
+                          <img src="images/product-4.jpg">
+                      </div>
+                      <div class="content">
+                          <h3>Product Name</h3>
+                          <div class="price">$12</div>
+                      </div>    
+                  </div>
                 </div>
             </section>
         </main>
