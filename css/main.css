@@ -460,7 +460,7 @@ thead, tbody, tfoot, tr, td, th {
 }
 
 .row {
-    /* --gutter-x: 1.5rem; */
+    --gutter-x: 1.5rem;
     --gutter-y: 0;
     margin-top: calc(-1 * var(--gutter-y));
     margin-right: calc(-.5 * var(--gutter-x));
@@ -473,8 +473,8 @@ thead, tbody, tfoot, tr, td, th {
     flex-shrink: 0;
     width: 100%;
     max-width: 100%;
-    padding-right: calc(var(--gutter-x*.5));
-    padding-left: calc(var(--gutter-x*.5));
+    padding-right: calc(var(--gutter-x)*.5);
+    padding-left: calc(var(--gutter-x)*.5);
     margin-top: var(--gutter-y);
 }
 
@@ -826,20 +826,20 @@ thead, tbody, tfoot, tr, td, th {
 
 .form-control-lg {
     min-height: calc(1.5em + 1.2rem + 2px);
-    font-size: .1rem;
+    font-size: 1rem;
     padding: .6rem 1rem;
 }
 
 textarea.form-control-sm {
     min-height: calc(1.5em + .75rem + 2px);
-    font-size: .875rem;
+    font-size: 1rem;
     border-radius: 0;
 
 }
 
 textarea.form-control-lg {
     min-height: calc(1.5em + 1.2rem + 2px);
-    font-size: .1rem;
+    font-size: 1rem;
     padding: .6rem 1rem;
 }
 
@@ -938,4 +938,17 @@ textarea.form-control-lg {
     top: 0;
     right: 0;
     z-index: 20;
+}
+
+/* about */
+
+.title {
+    font-size: 1.5rem;
+    margin-top: 3.5rem;
+    color: rgb(85, 80, 80);
+}
+
+.text {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
 }
